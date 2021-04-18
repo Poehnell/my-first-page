@@ -13,7 +13,7 @@ const config = {
     entry: './app/app.js',
     output: {
         filename: 'myBundle.[hash].js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'docs')
     },
     plugins:
         [new HtmlWebpackPlugin({template: './app/index.html'})],
@@ -23,7 +23,7 @@ const config = {
     //npm install webpack-dev-server for live updates and auto refresh page
     devServer: {
         port: 3000,
-        contentBase: path.resolve(__dirname, 'dist'),
+        contentBase: path.resolve(__dirname, 'docs'),
         hot: true
     },
     module: {
